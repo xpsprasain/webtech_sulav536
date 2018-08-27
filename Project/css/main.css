@@ -1,0 +1,22 @@
+#wrapper {
+    width: 980px;
+    border: 1px solid #F00;
+    height: 540px;
+    margin: 0px auto;
+}
+
+img{
+
+    width:300px;
+    height: 300px;
+
+    float: right;
+}
+
+.left{
+    float: right;
+}
+
+/*#wrapper #mainContent img p {*/
+    /*float: right;*/
+/*}*/
