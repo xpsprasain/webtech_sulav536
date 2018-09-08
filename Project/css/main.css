@@ -36,7 +36,7 @@
 
 #main_1content{
 
-    width: 460px;
+    width: 465px;
     height: 335px;
     margin: 5px 5px;
     border: 1px solid #F00;
@@ -46,7 +46,7 @@
 
 #main_2content{
 
-    width: 460px;
+    width: 465px;
     height: 335px;
     margin: 5px 5px;
     border: 1px solid #F00;
@@ -66,3 +66,15 @@
 .left{
     float: right;
 }
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+

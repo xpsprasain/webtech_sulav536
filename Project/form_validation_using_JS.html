@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<script src="js/form_validation.js"></script>	<link rel="stylesheet" href="css/js_form.css" type="text/css" />
+        </head>
+
+<body>
+    <h1 style="text-align: center"> Registration FORM </h1>
+    <form name="registration_form" action="#" onsubmit="return form_validation()" method="post">
+
+        <p>Name: <input type="text" size=65 name="Name"> </p><br>
+        <p>Address: <input type="text" size=65 name="Address">  </p><br>
+        <p>E-mail Address: <input type="text" size=65 name="EMail">  </p><br>
+        <p>Password: <input type="password" size=65 name="Password" id="passwords"> </p><br>
+        <p>Phone: <input type="text" size=65 name="Phone" id="phone"> </p><br>
+
+		<p>Select your gender<br>
+			 <input type="radio" name="Gender" value="male">Male<br>
+			 <input type="radio" name="Gender" value="female">Female<br>
+			 </p><br>
+		
+        <p>Select your Course						<select type="text" name="Subject" >								<option value="0">Please Choose...</option>				<option>B.Sc.CSIT</option>				<option>B.Sc.Nursing</option>				<option>B.Sc</option>				<option>BIM</option>				<option>BIT</option>							</select>			</p>			
+    
+        <p>		<!-- <button onclick="submit_function()">Submit</button> -->				<input type="submit" value="Send" name="Submit"> 				
+            <input type="reset" value="Reset" name="Reset">
+        </p>	
+    </form>
+</body>
+</html>
