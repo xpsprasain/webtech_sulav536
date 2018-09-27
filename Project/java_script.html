@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function message()
+        {
+            alert('Welcome to deerwalk');
+        }
+        message();
+        function end() {
+            if(confirm("Are you sure you want to close this window")){
+                return true;
+            }else{
+                return false;
+            }
+        };
+        window.onbeforeunload = end;
+    </script>
+</head>
+
+<body onunload="closeIt()">
+<h1>Deerwalk Institute of Technology</h1>
+</body>
+</html>
