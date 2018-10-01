@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>JavaScript : Retrieve values from a cookie - example1</title>
+</head>
+<body>
+<h1 style="color: red">JavaScript : Retrieve values from a cookie - example1</h1>
+<hr />
+<script type="text/javascript">
+//This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+var search_cookie = "my_cookie" + "="
+if (document.cookie.length > 0) 
+{
+// Search for a cookie.
+offset = document.cookie.indexOf(search_cookie)
+if (offset != -1)
+{
+offset += search_cookie.length 
+// set index of beginning of value 
+end = document.cookie.indexOf(";",offset)
+if (end == -1) 
+{
+end = document.cookie.length
+}
+alert(decodeURIComponent(document.cookie.substring(offset, end)))
+}
+}
+//]]>
+</script>
+</head>
+</body>
+</html>
