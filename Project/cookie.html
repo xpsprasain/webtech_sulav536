@@ -1,34 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-<title>JavaScript : Retrieve values from a cookie - example1</title>
+    <style>
+        <script type="text/javascript">
+          function setCookie() {
+            var user=getCookie("name");
+            var user=getCookie("name");
+        if (user != "") {
+        setCookie("name", form1.name.value);
+        setCookie("password", form1.password.value);
+        }else{
+         setCookie("name", form1.name.value);
+         setCookie("password", form1.password.value);
+         }
+        }
+        </script>
+        </style>
 </head>
 <body>
-<h1 style="color: red">JavaScript : Retrieve values from a cookie - example1</h1>
-<hr />
-<script type="text/javascript">
-//This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
-var search_cookie = "my_cookie" + "="
-if (document.cookie.length > 0) 
-{
-// Search for a cookie.
-offset = document.cookie.indexOf(search_cookie)
-if (offset != -1)
-{
-offset += search_cookie.length 
-// set index of beginning of value 
-end = document.cookie.indexOf(";",offset)
-if (end == -1) 
-{
-end = document.cookie.length
-}
-alert(decodeURIComponent(document.cookie.substring(offset, end)))
-}
-}
-//]]>
-</script>
-</head>
+<center>
+    <div>
+        <form id="form1" name="form1">
+             Name: <input type="text" id="name"><br>
+             Password: <input type="password" id="password"><br>
+             <input type="submit" value="submit" onsubmit="setCookie();">
+             <p id="val"></p>
+        </form>
+        <center>
+    </div>
 </body>
 </html>

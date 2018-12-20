@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE address [
+<!ELEMENT address (name,company)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+
+]>
+<address>
+<name>Deerwalk</name>
+<company>Deerwalk</company>
+</address>
